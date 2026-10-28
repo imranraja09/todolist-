@@ -1,6 +1,7 @@
 import TodoForm from '../components/todoform'
 import TodoList from '../components/todolist'
 import { useTodos } from '../context/todocontext'
+import logo from '../assets/logo.svg'
 
 function Home() {
   const { todos } = useTodos()
@@ -11,6 +12,7 @@ function Home() {
   return (
     <section>
       <div className="page-header">
+        <img src={logo} alt="TodoList Logo" className="hero-logo" />
         <h1 className="page-title">My Todo List</h1>
         <p className="page-subtitle">
           Organize your daily tasks with a clean and simple workspace

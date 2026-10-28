@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 function About() {
   return (
     <section>
       <div className="page-header">
+        <img src={logo} alt="TodoList Logo" className="hero-logo" />
         <h1 className="page-title">About This App</h1>
         <p className="page-subtitle">
           A clean, minimal React Todo List built with Context API &amp; React Router

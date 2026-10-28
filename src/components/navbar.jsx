@@ -1,5 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
 import { useTodos } from '../context/todocontext'
+import logo from '../assets/logo.svg'
 
 function Navbar() {
   const { todos } = useTodos()
@@ -9,7 +10,7 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <Link to="/" className="brand">
-          <span className="brand-icon">✓</span>
+          <img src={logo} alt="TodoList Logo" className="brand-logo" />
           <span>TodoList</span>
           {pendingCount > 0 && (
             <span className="brand-badge">{pendingCount} pending</span>
